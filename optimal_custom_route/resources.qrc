@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/optimal_custom_route/" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

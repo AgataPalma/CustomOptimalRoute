@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailsInputDialog</class>
+ <widget class="QDialog" name="DetailsInputDialog">
+  <property name="windowTitle">
+   <string>City Route Planner</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="layoutII">
+     <item>
+      <widget class="QLabel" name="poiLabel">
+       <property name="text">
+        <string>Points of interest:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxPOI">
+       <item>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Let me choose</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="layoutCategories"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutIII">
+     <item>
+      <widget class="QLabel" name="checkboxLabel">
+       <property name="text">
+        <string>Starting point defined:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkboxStartingPoint"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutAddress">
+     <item>
+      <widget class="QLabel" name="addressLabel">
+       <property name="text">
+        <string>Address:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="addressInput"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveStartingPointButton">
+       <property name="text">
+        <string>Save Starting Point</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutIV">
+     <item>
+      <widget class="QLabel" name="outputLabel">
+       <property name="text">
+        <string>Save the output to:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outputInput"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="selectOutputPathButton">
+       <property name="text">
+        <string>...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutV">
+     <item>
+      <widget class="QLabel" name="labelDBSCAN">
+       <property name="text">
+        <string>Change DBSCAN default values:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkboxDBSCAN"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutEps">
+     <item>
+      <widget class="QLabel" name="epsLabel">
+       <property name="text">
+        <string>eps:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="epsInput"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutMinPts">
+     <item>
+      <widget class="QLabel" name="minPtsLabel">
+       <property name="text">
+        <string>minPts:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="minPtsInput"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="generateRouteButton">
+     <property name="text">
+      <string>Compute</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="startAnimationButton">
+     <property name="text">
+      <string>Start Animation</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="stopAnimationButton">
+     <property name="text">
+      <string>Stop Animation</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
